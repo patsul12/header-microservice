@@ -13,6 +13,6 @@ router.get('/api/whoami', function(req, res, next) {
   var software = uaParser.os.toString();
   var output = { ip: ip, language: language, software: software };
   res.json(output);
-})
+});
 
 module.exports = router;
